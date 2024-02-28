@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Logo-e.webp" type="image/x-icon">
+    
+    <title>Hamza Notes</title>
+    
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+   
+    }
+    body{
+        background-color: #EEF0F2;
+    }
+.navbar{
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.815); 
+    height: 95px; 
+    
+    
+}
+.icon {
+    width: 100px;
+    float: left;
+    height: 10px;
+}
+.logopit {
+    color: #fafafc; text-shadow: 15px solid white;
+    font-size: 38px; font-weight: bold;
+    font-family: Arial;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px; margin-top: 10%;
+
+}
+
+.my-pik{
+    height: 70px; width: 70px; border-radius: 100%; margin-top: 1%; margin-left: 2.5%;
+}
+.drop{
+    margin-top: -2%;
+    text-align: center;
+    height: 70px;
+     width: 90%; margin-left: 5%; 
+}
+.drop .down {
+     position: relative;
+    list-style: none;
+   margin: 3%;
+   background-color: rgba(5, 5, 5, 0.815);  border-radius: 20px;
+}
+.drop .down li{
+    display: inline-block;
+    position: relative; font-family: arial;
+}
+.drop .down .physics{
+    background-color: rgba(112, 111, 111, 0.815);
+}
+.drop .down li a{
+    text-decoration: none; display: block; text-align: center;
+    color: white; padding: 20px 25px; font-size: 20px;
+}
+.down li:hover{
+    background-color: rgba(112, 111, 111, 0.815);  border-radius: 20px;
+}
+.navbar h1{
+    margin-top: -5%; margin-left: -2%; padding-top: 10px;
+    text-align: center; color: white; 
+    font-family: arial; font-display: initial; 
+}
+.buttn{
+    margin-top: -2%;
+}
+.buttn .login{
+    width: 120px; height: 45px; border: 3px solid white; border-radius: 40px; background-color: transparent; color: white; font-size: 18px;
+    margin-left: 87%; margin-top: -99%
+}
+.buttn .login a{
+    text-decoration: none; text-align: center; color: white;
+}
+.buttn .login:hover{
+    background-color: rgb(253, 250, 250); border: 3px solid rgb(250, 249, 249);
+}
+.buttn .login a:hover{
+    color: rgb(10, 10, 10);
+}
+.logo{
+    width: 100%; height: 350px; position: absolute; top: 15%;
+    margin: 0 2%  0 0;
+    background-color: #FFFFFF; box-shadow: 3px 3px 31px black;
+}
+.logo img{
+    border-radius: 50px; width: 300px; height: 190px; margin-left: 38%; padding-top: 40px;
+}
+.body{
+    display: flex; margin-top: 10%;
+}
+.body-left{
+    width: 70%; min-height: 120vh; background-color: #FFFFFF; position: absolute;
+    top: 60%; left: 1%; box-shadow: 3px 3px 31px black; border-radius: 8px; margin-top: 7%;
+}
+.body-left h1{
+    text-align: center; margin: 15px 3px; height: 35px; padding: 20px 25px; 
+    border-radius: 30px; background-color:  rgba(5, 5, 5, 0.815); color: white;
+}
+.body-left .form{
+    border: 3px solid rgb(65, 62, 62); position: absolute; width: 70%; height: 380px;
+    left: 15%;    
+}
+.body-left .form h2{
+    text-align: center; font-size: 35px; font-family: arial; padding-top: 3%;
+}
+.body-left .form table,tr,th,td{
+    border: 2px solid gray; height: 40px; width: 40%; margin-left: 12%; text-align: center;
+    border-collapse: collapse;
+}
+.body-left .form table {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 70%; height: 130px;
+            border-collapse: collapse;
+          
+}
+.body-left .content{
+     height: 80vh;  margin-top: 40%; 
+    }
+.body-left .content .c1{
+    width: 70%; height: 76%; margin-left: 16%; margin-top: -4%;
+}
+.body-left .content2{
+     height: 80vh;   
+    }
+.body-left .content2 .c2{
+    width: 70%; height: 79%; margin-left: 16%;
+}
+.body-left .content3{
+     height: 80vh;   
+    }
+.body-left .content3 .c3{
+    width: 70%; height: 79%; margin-left: 20%;
+}
+.body-left .content4{
+     height: 80vh;   
+
+}
+.body-left .content4 .c4{
+    width: 70%; height: 79%; margin-left: 16%; 
+}
+.body-left .content5{
+     height: 80vh;   
+    }
+.body-left .content5 .c5{
+    width: 70%; height: 79%; margin-left: 20%;
+}
+.body-left .content5{
+     height: 80vh;   
+    }
+.body-left .content6 .c6{
+    width: 70%; height: 79%; margin-left: 20%;
+}
+.body-left .content6{
+     height: 80vh;   
+    }
+.body-left .content7 .c7{
+    width: 70%; height: 79%; margin-left: 20%;
+}
+.body-right{
+    width: 26%; min-height: 320vh; background-color: #FFFFFF; position: absolute;
+    top: 60%; left: 73%;  box-shadow: 3px -3px 31px black; border-radius: 8px; margin-top: 7%;
+}
+.body-right h3{
+    text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 23px; height: 40px; margin-top: 10%; border-radius: 9px; background-color:  rgba(5, 5, 5, 0.815);
+    color: white;
+}
+.body-right ul{
+    list-style: circle; line-height: 40px; margin-left: 13%;
+}
+.body-right .image{
+    border: 1px solid rgb(87, 86, 86); height: 70vh; margin: 2% 2%; box-shadow: 3px 3px 11px black;
+}
+.body-right .image img{
+    width: 95%; cursor: pointer; margin-left: 2%; 
+    margin-top: 2%;
+}
+.body-right .image p{
+    font-weight: 500; padding: 5px 3px; 
+    font-size: 18px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.body-right .pdf{
+    border: 1px solid rgb(87, 86, 86); height: 70vh; margin: 2% 2%; box-shadow: 3px 3px 11px black;
+}
+.body-right .pdf embed{
+    width: 95%; cursor: pointer; margin-left: 2%; height: 80%; 
+    margin-top: 2%; 
+}
+.body-right .pdf p{
+    font-weight: 500; padding: 5px 3px; 
+    font-size: 18px; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    width: 70%;
+    margin: 3px 10px;
+    
+    position: absolute;
+    top: 695%;
+}
+.comment-section{
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 3px 3px 31px black;
+}
+.comment-section h4{
+    padding: 4px 5%; text-shadow: 3px 5px 11px black;
+    font-size: 30px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.comment-section input{
+    margin: 4px 5%;
+    width: 55%; border-radius: 7px; outline: none; border: 1px solid rgb(136, 127, 127);
+    height: 40px;  padding-left: 10px; 
+    font-size: 18px;
+}
+
+::placeholder{
+    padding-left: 3px; padding-top: 5px; cursor: pointer;
+    font-size: 16px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.comment-section textarea{
+    margin: 4px 5%; border: 1px solid rgb(136, 127, 127);
+    width: 55%; border-radius: 7px; outline: none; font-size: 20px; padding-left: 10px; padding-top: 4px;
+    height: 170px;
+}
+
+.comment-section button{
+    margin: 4px 5%; width: 20%; height: 40px; border-radius: 10px; outline: none; border: none; cursor: pointer;
+    background-color: rgb(0, 39, 146); color: white; text-shadow: 1px 1px 11px black;
+}
+.comment-section button:hover{
+    background-color: black;
+}
+</style>
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <span class="logopit">HamAi</span> 
+            </div>
+            <div class="my-image">
+                <a href="my-Logo-Image.webp"><img src="my-Logo-Image.webp" alt="My pik" class="my-pik"></a>
+            </div>
+                <h1>Hamza Notes 👉🏻</h1>
+            <div class="buttn">
+                <button class="login"><a href="./login page.html">Login ?</a></button>
+            </div>
+            <div class="logo">
+                <img src="Logo-e.webp" alt="Logo">
+                <div class="drop">
+                    <ul class="down">
+                        <li><a href="/ICT/Index.html">ICT</a></li>
+                        <li class="physics"><a href="Physics.html">PHYSICS</a></li>
+                        <li><a href="/Math/Math.html">MATH</a></li>
+                        <li><a href="/Islamiat/Notes.html">ISLAMIAT</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="body-left">
+                <h1>Hamza Physics Notes</h1><br>
+                <div class="form">
+                    <h2>Notes Information</h2><br>
+                    <table>
+                        <head>
+                            <tr>
+                                <th>Notes</th>
+                                <td>Physics</td>
+                            </tr>
+                        </head>
+                    <tbody>
+                        <tr>
+                            <th>Class</th>
+                            <td>BSIT</td>
+                        </tr>
+                        <tr>
+                            <th>Semester</th>
+                            <td>1<sup>st</sup></td>
+                        </tr>
+                        <tr>
+                            <th>Batch #</th>
+                            <td>01 (one)</td>
+                        </tr>
+                        <tr>
+                            <th>Session</th>
+                            <td>2023-2027</td>
+                        </tr>
+                        <tr>
+                            <th>Subject</th>
+                            <td>"Applied Physics"</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div><br><br>
+                <div class="content">
+                    <h1>Electric Charge & Colulomb's Law</h1><br><br>
+                    <embed class="c1" src="Chapter 01.pdf" type="Application/PDF">
+                </div>
+                <div class="content2">
+                    <h1>Electric Field</h1>
+                    <embed class="c2" src="Chapter 2.pdf" type="Application/PDF">
+                </div>
+                <div class="content3">
+                    <h1>Gauss's Law</h1>
+                    <embed class="c3" src="Chapter 03.pdf" type="Application/PDF">
+                </div>
+                <div class="content4">
+                    <h1>Electric Potential</h1>
+                    <embed class="c4" src="Chapter 04.pdf" type="Application/PDF">
+                </div>
+                <div class="content5">
+                    <h1>Current and Resistance</h1>
+                    <embed class="c5" src="Chapter 06.pdf" type="Application/PDF">
+                </div>
+                <div class="content6">
+                    <h1>Magnetic Field</h1>
+                    <embed class="c6" src="" type="Application/PDF">
+                </div>
+                <div class="content7">
+                    <h1>Ampere's Law</h1>
+                    <embed class="c7" src="" type="Application/PDF">
+                </div>
+            </div>
+            <div class="body-right">
+                <h3>Developer</h3><br>
+                <div class="image">
+                    <a href="Developer.webp"><img src="Developer.webp" alt="Cource Outline"></a>
+                    <hr><br>
+                    <p>Developer And PDFs Owner <br><i><b>HAMZA ALI</b></i> </p>
+                </div><br>
+                <h3>Chapters for Physics</h3><br>
+                <ul>
+                    <li>Electric Charge & Colulomb's Law</li>
+                    <li>Electric Field</li>
+                    <li>Gauss's Law</li>
+                    <li>Electric Potential</li>
+                    <li>Current and Resistance</li>
+                    <li>Magnetic Field</li>
+                    <li>Ampere's Law</li>
+                </ul><br>
+                <h3>Cource Outline</h3>
+                <div class="image">
+                    <a href="Outline-Physics.webp"><img src="Outline-Physics.webp" alt="Cource Outline"></a>
+                    <hr><br>
+                    <p>Physics Course Outline given by Punjab Universit of Information Technology </p>
+                </div><br>
+                <h3>Full notes of Physics</h3>
+                <div class="pdf">
+                    <embed src="Full notes of physics.pdf" type="Application/PDF"><hr>
+                    <p>Here, a short Introduction of Physics. The Starting Topic is Introduction of Islam</p>
+                </div><br>
+                <h3>Assignment 01</h3>
+                <div class="pdf">
+                    <embed src="Assignment 01.pdf" type="Application/PDF"><hr>
+                    <p>Here, an Assignment of Applied Physics. The Assignment Marks is 10</p>
+                </div><br>
+                <h3>Assignment 02</h3>
+                <div class="pdf">
+                    <embed src="Assignment 02.pdf" type="Application/PDF"><hr>
+                    <p>Here, an Assignment of Applied Physics. The Assignment Marks is 10</p>
+                </div><br>
+                <h3>Assignment 03</h3>
+                <div class="pdf">
+                    <embed src="Assignment 03.pdf" type="Application/PDF"><hr>
+                    <p>Here, an Assignment of Applied Physics. The Assignment Marks is 10</p>
+                </div><br>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="comment-section">
+                <h4>Comment-Section</h4>
+                <input type="text" placeholder="Type your Name" required><br>
+                <input type="email" placeholder="Enter Email" required><br>
+                <textarea  cols="30" rows="10" placeholder="Please Enter Your Comment"></textarea><br>
+                <a href="#"><button type="button">Submit Comment</button></a>
+            </div>
+        </footer>
+        <foot>
+            <div class="icons-2">
+                        <a href="https://www.facebook.com/profile.php?id=100087901513542" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/naughty_jutt_02/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.twitter.com"><ion-icon name="logo-twitter" target="_blank"></ion-icon></a>
+                        <a href="https://www.youtube.com/channel/UCXywOTkSF7Ki2kXASEeYEdQ" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+            </div>
+            <div class="menu1">
+                <ul>
+                    <a href="#"><li>FAQ</li></a>
+                    <a href="#"><li>Services</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="#"><li>Privacy Policy</li></a>
+                </ul>
+            </div>
+            <div class="p">
+                <p class="paragraph3">
+                    @Hamza Jutt ! All Rights Reserved
+                </p>
+            </div>
+        </foot>
+</body>
+</html>
